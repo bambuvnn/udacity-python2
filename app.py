@@ -96,3 +96,7 @@ def meme_post():
     except Exception as e:
         print(e)
         return redirect('/create')
+
+
+if __name__ == "__main__":
+    app.run()
