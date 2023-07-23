@@ -88,6 +88,7 @@ def meme_post():
             out_path = meme.make_meme(tmp_f.name, quote)
 
             # close the file and delete it
+            tmp_f.close()
             os.remove(tmp_f.name)
 
         # Return the rendered meme template with the output path using f-strings
